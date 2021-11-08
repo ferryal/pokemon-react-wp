@@ -361,7 +361,7 @@ class App extends React.Component {
         });
       }
 
-      let filterArr = [];
+      const filterArr = [];
 
       for (let i = 0; i < this.state.allPokemons.length; i += 1) {
         for (let j = 0; j < this.state.allPokemons[i].types.length; j += 1) {
