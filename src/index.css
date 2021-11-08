@@ -4,23 +4,23 @@ html {
   --bgcolor: none;
   --colorPrimary: #000;
   --filterHeading: #000;
-  --selectBg : #fff;
-  --selectText : #000;
+  --selectBg: #fff;
+  --selectText: #000;
 }
 
-html[data-theme=dark] {
+html[data-theme="dark"] {
   --toggle: linear-gradient(90deg, hsl(216deg 52% 48%), hsl(51deg 100% 60%));
   --bggradient: none;
   --bgcolor: #16171f;
   --colorPrimary: #fff;
   --filterHeading: #707384;
-  --selectBg : #16171f;
-  --selectText : #707384;
+  --selectBg: #16171f;
+  --selectText: #707384;
 }
 
 @font-face {
-  font-family: 'barcadebrawl';
-  src: url('../src/assets/fonts/BarcadeBrawl.ttf');
+  font-family: "barcadebrawl";
+  src: url("../src/assets/fonts/BarcadeBrawl.ttf");
 }
 
 body {
@@ -28,7 +28,9 @@ body {
   background-image: var(--bggradient);
   background-color: var(--bgcolor);
   background-repeat: repeat;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background 1s ease;
@@ -37,8 +39,8 @@ body {
 .poke__logo {
   margin-top: 10px;
   width: 15vw;
-  -webkit-filter: drop-shadow(5px 0px 0px rgba(0,0,0,0.6));
-  filter: drop-shadow(5px 0px 0px rgba(0,0,0,0.6));
+  -webkit-filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
 }
 
 .app__container {
@@ -49,12 +51,12 @@ body {
   min-height: 100vh;
 }
 
-.app__container .loading__text{
-  font-family: 'Press Start 2P', cursive;
+.app__container .loading__text {
+  font-family: "Press Start 2P", cursive;
   color: var(--colorPrimary);
 }
 
-.gif__container{
+.gif__container {
   text-align: center;
 }
 
@@ -80,7 +82,7 @@ body {
 
 .detail-wrapper button {
   color: rgb(22, 22, 22);
-  padding: .5rem;
+  padding: 0.5rem;
   margin-top: 1rem;
   border: none;
   border-radius: 0.2rem;
@@ -98,7 +100,7 @@ body {
   margin-top: 1rem;
 }
 
-.poke__name>h3 {
+.poke__name > h3 {
   text-transform: capitalize;
 }
 
@@ -135,22 +137,22 @@ body {
   justify-content: center;
   gap: 15px;
   text-align: center;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 10px;
 }
 
-.no__data{
-  font-family: 'Press Start 2P', cursive;
+.no__data {
+  font-family: "Press Start 2P", cursive;
   font-size: 10px;
   text-align: center;
   color: var(--colorPrimary);
 }
 
-.app__footer> :nth-child(1) {
+.app__footer > :nth-child(1) {
   margin-top: 20px;
 }
 
-.app__footer> :nth-child(2) {
+.app__footer > :nth-child(2) {
   margin-bottom: 20px;
 }
 
@@ -165,11 +167,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'barcadebrawl';
+  font-family: "barcadebrawl";
   font-size: 12px;
 }
 
-.filter__items>input {
+.filter__items > input {
   width: 10vw;
   margin-top: 5px;
   background-color: var(--selectBg);
@@ -246,26 +248,29 @@ select {
   transition: all 0.55s;
 }
 
-.switch .toggle input[type=checkbox]:checked~.toggle-thumb .fa-sun {
+.switch .toggle input[type="checkbox"]:checked ~ .toggle-thumb .fa-sun {
   opacity: 1;
   z-index: -1;
   transform: translateX(34px);
 }
 
-.switch .toggle input[type=checkbox]:checked~.toggle-thumb .fa-moon {
+.switch .toggle input[type="checkbox"]:checked ~ .toggle-thumb .fa-moon {
   opacity: 0;
   transform: translateX(4px);
 }
 
-.github__icon, .app__footer {
+.github__icon,
+.app__footer {
   color: var(--colorPrimary);
 }
 
-.filter__items>div, label {
+.filter__items > div,
+label {
   color: var(--filterHeading);
 }
 
-.switch, .github__icon {
+.switch,
+.github__icon {
   width: 5vw;
   margin: 0 6vw;
 }
@@ -280,15 +285,15 @@ a {
 }
 
 .noselect {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-select{
+select {
   color: var(--selectText);
   background-color: var(--selectBg);
 }
@@ -309,8 +314,8 @@ select{
     gap: 2vh 2vw;
     justify-content: center;
   }
-  select, .filter__items>input{
+  select,
+  .filter__items > input {
     width: 40vw;
   }
-  
 }
